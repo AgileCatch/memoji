@@ -1,3 +1,6 @@
+import com.android.build.api.dsl.BuildFeatures
+import com.android.build.api.dsl.ViewBinding
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -32,6 +35,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
